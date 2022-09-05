@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --blue-one: #2556ba;
+  --blue-two: #6086d3;
+  --blue-theree: #b9cdf6;
+  --blue-four: #f6f7fb;
+}
+
+* {
+  font-family: 'Fredoka', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--blue-four);
+  height: 200vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url('asset/header-image.jpeg');
+  background-color: red;
+}
+
+/* header .navbar {
+  background-color: var(--blue-one);
+  padding: 1.2em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+header .navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar .container .logo {
+  color: var(--blue-four);
+  font-size: 1.2em;
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header .navbar .container .hamburger {
+  cursor: pointer;
+  display: block;
+}
+
+header .navbar .container .hamburger .bar {
+  display: block;
+  width: 22px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--blue-four);
+}
+
+header .navbar .container .hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+header .navbar .container .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+header .navbar .container .hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+header .navbar .container nav {
+  position: fixed;
+  display: flex;
+  right: -100%;
+  top: 67px;
+  gap: 0;
+  flex-direction: column;
+  background-color: var(--blue-two);
+  width: 80%;
+  height: 100vh;
+  text-align: center;
+  transition: 0.3s;
+  z-index: 99999;
+}
+
+header .navbar .container nav.active {
+  right: 0;
+} */
