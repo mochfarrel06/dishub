@@ -29,14 +29,8 @@ li {
 }
 
 /* Header */
-.header {
-  width: 100%;
-  height: 100vh;
-  background-image: url('asset/header-image.jpeg');
-  background-color: red;
-}
 
-/* header .navbar {
+.navbar {
   background-color: var(--blue-one);
   padding: 1.2em;
   width: 100%;
@@ -45,13 +39,13 @@ li {
   z-index: 999;
 }
 
-header .navbar .container {
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header .navbar .container .logo {
+.navbar .container .logo {
   color: var(--blue-four);
   font-size: 1.2em;
   font-family: 'Jost', sans-serif;
@@ -59,12 +53,12 @@ header .navbar .container .logo {
   letter-spacing: 1px;
 }
 
-header .navbar .container .hamburger {
+.navbar .container .hamburger {
   cursor: pointer;
   display: block;
 }
 
-header .navbar .container .hamburger .bar {
+.navbar .container .hamburger .bar {
   display: block;
   width: 22px;
   height: 3px;
@@ -73,19 +67,19 @@ header .navbar .container .hamburger .bar {
   background-color: var(--blue-four);
 }
 
-header .navbar .container .hamburger.active .bar:nth-child(2) {
+.navbar .container .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-header .navbar .container .hamburger.active .bar:nth-child(1) {
+.navbar .container .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-header .navbar .container .hamburger.active .bar:nth-child(3) {
+.navbar .container .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-header .navbar .container nav {
+.navbar .container nav {
   position: fixed;
   display: flex;
   right: -100%;
@@ -100,6 +94,6 @@ header .navbar .container nav {
   z-index: 99999;
 }
 
-header .navbar .container nav.active {
+.navbar .container nav.active {
   right: 0;
-} */
+}
