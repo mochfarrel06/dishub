@@ -5,6 +5,7 @@
   --blue-two: #6086d3;
   --blue-theree: #b9cdf6;
   --blue-four: #f6f7fb;
+  --text-color: #132d62;
 }
 
 * {
@@ -28,7 +29,12 @@ li {
   list-style: none;
 }
 
-/* Header */
+section {
+  padding: 5em 2em;
+  width: 100%;
+}
+
+/* Navbar */
 
 .navbar {
   background-color: var(--blue-one);
@@ -97,3 +103,162 @@ li {
 .navbar .container nav.active {
   right: 0;
 }
+
+.navbar .container nav ul li {
+  margin: 50px;
+}
+
+.navbar .container nav ul li a {
+  color: var(--blue-four);
+}
+
+/* End Navbar */
+
+/* Home */
+.home {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.home .home-text h1 {
+  color: var(--blue-one);
+  font-size: 2.3em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.home .home-text p {
+  color: var(--text-color);
+  font-size: 0.9em;
+  margin-bottom: 2em;
+}
+
+.home .home-text a {
+  display: inline-block;
+  padding: 0.8em 0.9em;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--blue-four);
+  background-color: var(--blue-one);
+  font-size: 0.9em;
+  transition: all 0.3s ease-in-out;
+}
+
+.home .home-text a:hover {
+  background-color: var(--text-color);
+}
+
+.home .home-img {
+  margin-top: 5em;
+}
+
+.home .home-img img {
+  width: 350px;
+}
+/* End Home */
+
+/* About */
+.about h2 {
+  text-align: center;
+  color: var(--blue-one);
+  margin-bottom: 3em;
+  font-size: 1.8em;
+}
+
+.about .about-text h3 {
+  color: var(--blue-two);
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.about .about-text p {
+  color: var(--text-color);
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.about .about-text ul {
+  line-height: 25px;
+}
+
+.about .about-leader {
+  margin-top: 2em;
+}
+
+.about .about-leader h3 {
+  font-size: 1.5em;
+  color: var(--blue-two);
+  margin-bottom: 1em;
+}
+
+.about .about-leader .img-leader {
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.about .about-leader .img-leader img {
+  border-radius: 5px;
+  width: 200px;
+}
+
+.about .about-leader .text-info .biodata h4 {
+  font-size: 1.2em;
+  color: var(--text-color);
+  margin-bottom: 1em;
+}
+
+.about .about-leader .text-info .biodata p {
+  color: var(--text-color);
+  margin-bottom: 0.5em;
+}
+
+.about .about-leader .text-info .biodata ul {
+  color: var(--text-color);
+  margin-bottom: 2em;
+  line-height: 27px;
+}
+/* End About */
+
+/* Layanan */
+.layanan h2 {
+  text-align: center;
+  color: var(--blue-one);
+  margin-bottom: 3em;
+  font-size: 1.8em;
+}
+
+.layanan .layanan-left .moto h3 {
+  font-size: 1.3em;
+  color: var(--blue-two);
+  margin-bottom: 0.5em;
+}
+
+.layanan .layanan-left .moto p {
+  color: var(--text-color);
+  margin-bottom: 1em;
+}
+
+.layanan .layanan-left .moto a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: var(--blue-four);
+  background-color: var(--text-color);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+}
+
+.layanan .layanan-left .moto a:hover {
+  background-color: var(--blue-theree);
+  color: var(--text-color);
+  margin-bottom: 2em;
+}
+
+.layanan .layanan-left .standar h3 {
+  font-size: 1.3em;
+  color: var(--blue-two);
+  margin-bottom: 0.5em;
+}
+/* Layanan */
