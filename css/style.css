@@ -256,19 +256,53 @@ section {
   margin-bottom: 2em;
 }
 
-.layanan .layanan-left .standar h3 {
-  font-size: 1.3em;
-  color: var(--blue-two);
-  margin-bottom: 0.5em;
+.layanan .layanan-left .accordion {
+  width: 100%;
 }
 
-.layanan .layanan-left .standar a {
-  color: var(--text-color);
-  font-size: 1.1em;
+.layanan .layanan-left .accordion a {
+  color: var(--blue-four);
 }
 
-.layanan .layanan-left .standar a:hover {
-  color: var(--blue-one);
+.layanan .layanan-left .accordion .accordion-item {
+  background-color: #132d62;
+  color: var(--blue-four);
+  margin: 1em 0;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
+.layanan .layanan-left .accordion .accordion-item .accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.layanan .layanan-left .accordion .accordion-item .accordion-item-header::after {
+  content: '\002B';
+  font-size: 2em;
+  position: absolute;
+  right: 1em;
+}
+
+.layanan .layanan-left .accordion .accordion-item .accordion-item-header.active::after {
+  content: '\2212';
+}
+
+.layanan .layanan-left .accordion .accordion-item .accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.layanan .layanan-left .accordion .accordion-item .accordion-item-body .accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
 /* Layanan */
