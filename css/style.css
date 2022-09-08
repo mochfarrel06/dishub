@@ -261,4 +261,14 @@ section {
   color: var(--blue-two);
   margin-bottom: 0.5em;
 }
+
+.layanan .layanan-left .standar a {
+  color: var(--text-color);
+  font-size: 1.1em;
+}
+
+.layanan .layanan-left .standar a:hover {
+  color: var(--blue-one);
+}
+
 /* Layanan */
