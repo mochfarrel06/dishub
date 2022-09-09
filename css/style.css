@@ -258,6 +258,7 @@ section {
 
 .layanan .layanan-left .accordion {
   width: 100%;
+  margin-bottom: 1.5em;
 }
 
 .layanan .layanan-left .accordion a {
@@ -305,4 +306,117 @@ section {
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
+
+.layanan .layanan-left .accordion h3 {
+  font-size: 1.3em;
+  color: var(--blue-two);
+  margin-bottom: 0.5em;
+}
+
+.layanan .layanan-right h3 {
+  font-size: 1.3em;
+  color: var(--blue-two);
+  margin-bottom: 0.5em;
+}
+
+.layanan .layanan-right .transportasi-rute .rute-jadwal a {
+  color: var(--text-color);
+  font-size: 0.9em;
+  margin: 5px;
+}
+
+.layanan .layanan-right .transportasi-rute .rute-jadwal {
+  margin-bottom: 2em;
+}
+
+.layanan .layanan-right .transportasi-rute .rute-map {
+  margin-bottom: 2em;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.layanan .layanan-right .transportasi-rute .rute-book h3 {
+  font-size: 1.3em;
+  color: var(--blue-two);
+  margin-bottom: 0.5em;
+}
+
+.layanan .layanan-right .transportasi-rute .rute-book .book {
+  margin-bottom: 1em;
+}
+
+.layanan .layanan-right .transportasi-rute .rute-book .book h5 {
+  color: var(--text-color);
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
+.layanan .layanan-right .transportasi-rute .rute-book .book a {
+  color: red;
+  padding-top: 1em;
+}
+
 /* Layanan */
+
+/* Berita */
+.berita h2 {
+  text-align: center;
+  color: var(--blue-one);
+  margin-bottom: 3em;
+  font-size: 1.8em;
+}
+
+.berita .category-berita {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.berita .category-berita .berita-card {
+  background-color: var(--blue-one);
+  width: 80%;
+  border-radius: 5px 5px 0 0;
+}
+
+.berita .category-berita .berita-card .card-up img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.berita .category-berita .berita-card .card-text {
+  padding: 20px;
+}
+
+.berita .category-berita .berita-card .card-text .judul-berita {
+  color: var(--blue-four);
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.berita .category-berita .berita-card .card-text .penulis-berita {
+  color: var(--text-color);
+  font-size: 0.85em;
+  margin-bottom: 1.5em;
+}
+
+.berita .category-berita .berita-card .card-text .info-berita {
+  color: var(--blue-four);
+  font-size: 0.95em;
+  margin-bottom: 2em;
+}
+
+.berita .category-berita .berita-card .card-text a {
+  display: inline-block;
+  padding: 0.8em 0.8em;
+  background-color: var(--blue-four);
+  border-radius: 5px;
+  font-size: 0.85em;
+  color: var(--text-color);
+}
+/* Berita */
