@@ -18,11 +18,17 @@
 
 body {
   background-color: var(--blue-four);
-  height: 200vh;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
@@ -48,7 +54,6 @@ section {
 .navbar .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navbar .container .logo {
@@ -59,57 +64,59 @@ section {
   letter-spacing: 1px;
 }
 
-.navbar .container .hamburger {
-  cursor: pointer;
+.navbar .container nav {
+  display: none;
+}
+
+.navbar .container nav.menu-btn {
   display: block;
 }
 
-.navbar .container .hamburger .bar {
-  display: block;
-  width: 22px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--blue-four);
+.navbar .container .mobile-menu {
+  font-size: 1.7em;
+  color: var(--blue-four);
 }
 
-.navbar .container .hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.navbar .container .hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.navbar .container .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+.navbar .container nav .mobile-menu-exit {
+  font-size: 1.7em;
+  color: var(--blue-four);
 }
 
 .navbar .container nav {
-  position: fixed;
-  display: flex;
-  right: -100%;
-  top: 67px;
-  gap: 0;
-  flex-direction: column;
   background-color: var(--blue-two);
-  width: 80%;
-  height: 100vh;
-  text-align: center;
-  transition: 0.3s;
-  z-index: 99999;
-}
-
-.navbar .container nav.active {
+  position: fixed;
   right: 0;
-}
-
-.navbar .container nav ul li {
-  margin: 50px;
+  top: 0;
+  padding: 1em;
+  width: 63%;
+  height: 100vh;
 }
 
 .navbar .container nav ul li a {
   color: var(--blue-four);
+  padding: 0.5em;
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+  transition: all 0.5s ease;
+}
+
+.navbar .container nav ul {
+  margin-top: 2.5em;
+}
+
+.navbar .container nav ul li a:hover {
+  color: var(--lightgreen-color);
+}
+
+.navbar .container nav .mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.navbar .container nav ul.secondary-nav {
+  margin-top: 2em;
 }
 
 /* End Navbar */
@@ -125,12 +132,14 @@ section {
   font-size: 2.3em;
   text-transform: uppercase;
   margin-bottom: 0.5em;
+  letter-spacing: 2px;
 }
 
 .home .home-text p {
   color: var(--text-color);
   font-size: 0.9em;
   margin-bottom: 2em;
+  line-height: 20px;
 }
 
 .home .home-text a {
@@ -153,7 +162,7 @@ section {
 }
 
 .home .home-img img {
-  width: 350px;
+  width: 80%;
 }
 /* End Home */
 
@@ -168,7 +177,7 @@ section {
 .about .about-text h3 {
   color: var(--blue-two);
   font-size: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .about .about-text p {
@@ -321,12 +330,20 @@ section {
 
 .layanan .layanan-right .transportasi-rute .rute-jadwal a {
   color: var(--text-color);
-  font-size: 0.9em;
+  font-size: 1em;
   margin: 5px;
+  font-weight: 500;
+  transition: all 1s ease-in-out;
+}
+
+.layanan .layanan-right .transportasi-rute .rute-jadwal a:hover {
+  color: var(--blue-one);
 }
 
 .layanan .layanan-right .transportasi-rute .rute-jadwal {
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
 }
 
 .layanan .layanan-right .transportasi-rute .rute-map {
@@ -346,18 +363,19 @@ iframe {
 }
 
 .layanan .layanan-right .transportasi-rute .rute-book .book {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .layanan .layanan-right .transportasi-rute .rute-book .book h5 {
   color: var(--text-color);
   font-size: 0.95em;
   font-weight: 500;
+  margin-bottom: 0.5em;
 }
 
 .layanan .layanan-right .transportasi-rute .rute-book .book a {
   color: red;
-  padding-top: 1em;
+  margin: 0;
 }
 
 /* Layanan */
@@ -379,7 +397,7 @@ iframe {
 
 .berita .category-berita .berita-card {
   background-color: var(--blue-one);
-  width: 80%;
+  width: 70%;
   border-radius: 5px 5px 0 0;
 }
 
@@ -397,6 +415,8 @@ iframe {
   text-align: center;
   font-size: 1.1em;
   margin-bottom: 0.5em;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .berita .category-berita .berita-card .card-text .penulis-berita {
@@ -407,8 +427,10 @@ iframe {
 
 .berita .category-berita .berita-card .card-text .info-berita {
   color: var(--blue-four);
-  font-size: 0.95em;
+  font-size: 0.75em;
   margin-bottom: 2em;
+  letter-spacing: 1px;
+  line-height: 17px;
 }
 
 .berita .category-berita .berita-card .card-text a {
@@ -418,5 +440,283 @@ iframe {
   border-radius: 5px;
   font-size: 0.85em;
   color: var(--text-color);
+  transition: all 0.5s ease-in;
+}
+
+.berita .category-berita .berita-card .card-text a:hover {
+  background-color: var(--text-color);
+  color: var(--blue-four);
 }
 /* Berita */
+
+/* Contact */
+.contact h2 {
+  font-size: 1.8em;
+  color: var(--blue-one);
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.contact .contact-social {
+  margin-bottom: 3em;
+}
+
+.contact .contact-social .social-link {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin: 0 0 1.6em 0;
+}
+
+.contact .contact-social .social-link a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: var(--blue-one);
+  text-align: center;
+  font-size: 1em;
+  color: var(--blue-four);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .contact-social .social-link a:hover {
+  background-color: var(--blue-two);
+  color: var(--text-color);
+}
+
+.contact .contact-social .social-link .social-text {
+  color: var(--text-color);
+}
+
+.contact .contact-social .social-link .social-text h5 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+.contact .contact-social .social-link .social-text p {
+  font-size: 0.8em;
+  color: var(--text-color);
+}
+
+.contact .contact-suggest form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact .contact-suggest form .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.contact .contact-suggest form .input-group label {
+  color: var(--text-color);
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.contact .contact-suggest form .input-group input,
+.contact .contact-suggest form .input-group textarea {
+  border: 2px solid var(--blue-one);
+  padding: 1em;
+}
+
+.contact .contact-suggest form button {
+  width: 10em;
+  padding: 0.8em 0.5em;
+  background-color: var(--blue-one);
+  color: var(--blue-four);
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 3em 2em;
+  width: 100%;
+  text-align: center;
+  background-color: var(--blue-one);
+}
+
+footer p {
+  color: var(--blue-four);
+  font-size: 0.9em;
+}
+/* Contact */
+
+@media only screen and (min-width: 627px) {
+  .berita .category-berita .berita-card {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar .container .mobile-menu,
+  .navbar .container nav .mobile-menu-exit {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  .navbar .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background: none;
+    position: unset;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .navbar .container nav ul {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .navbar .container nav ul li a {
+    color: var(--blue-four);
+    font-size: 1.1em;
+    padding: 0.1em 1em;
+  }
+
+  .home .home-img img {
+    width: 50%;
+  }
+
+  .berita .category-berita .berita-card {
+    width: 50%;
+  }
+
+  .contact .contact-suggest form .input-group input,
+  .contact .contact-suggest form .input-group textarea {
+    width: 70%;
+  }
+
+  .layanan .layanan-left .accordion {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .berita .category-berita {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .berita .category-berita .berita-card {
+    width: 260px;
+  }
+
+  .contact .contact-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact .contact-suggest {
+    width: 60%;
+  }
+
+  .contact .contact-suggest form .input-group input,
+  .contact .contact-suggest form .input-group textarea {
+    width: 100%;
+  }
+
+  .berita .category-berita .berita-card {
+    width: 31%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 10em 4em;
+  }
+
+  .home {
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .home .home-text {
+    width: 50%;
+  }
+
+  .home .home-img {
+    margin: 0;
+    width: 50%;
+    text-align: end;
+  }
+
+  .home .home-img img {
+    width: 320px;
+  }
+
+  .home .home-text h1 {
+    margin-bottom: 1.2em;
+  }
+
+  .home .home-text p {
+    margin-bottom: 3em;
+  }
+
+  .about .about-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about .about-text {
+    width: 40%;
+  }
+
+  .about .about-leader {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .about .about-leader h3 {
+    font-size: 1.5em;
+    color: var(--blue-two);
+    margin-bottom: 1em;
+  }
+
+  .about .about-leader .img-leader img {
+    width: 210px;
+  }
+
+  .layanan .layanan-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .berita .category-berita .berita-card {
+    width: 32%;
+  }
+
+  .about .about-leader .text-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .about .about-leader .img-leader {
+    justify-content: start;
+  }
+}

@@ -16,24 +16,25 @@
       <div class="container">
         <a href="#" class="logo">Dishub</a>
 
-        <nav id="menu">
+        <!-- <img src="img/menu.svg" alt="" id="mobile-cta" class="mobile-menu" /> -->
+        <a id="mobile-cta" class="mobile-menu"><i class="bx bx-menu"></i></a>
+
+        <nav>
+          <a id="mobile-exit" class="mobile-menu-exit"><i class="bx bx-x"></i></a>
+
           <ul>
-            <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">About</a></li>
-            <li><a href="#" class="nav-link">Service</a></li>
-            <li><a href="#" class="nav-link">Contact</a></li>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">Profil</a></li>
+            <li><a href="#layanan" class="nav-link">Layanan Publik</a></li>
+            <li><a href="#berita" class="nav-link">Berita</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
-
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
       </div>
     </div>
     <!-- End Navbar -->
 
+    <!-- Main Content -->
     <div class="main-content container">
       <section class="home" id="home">
         <div class="home-text">
@@ -42,7 +43,7 @@
             Dinas Perhubungan merupakan unsur pelaksana otonomi daerah di bidang perhubungan yang berkedudukan di bawah dan bertanggung jawab kepada Gubernur melalui SEKDA. Dinas Perhubungan mempunyai tugas pokok melaksanakan urusan
             pemerintahan daerah bidang perhubungan berdasarkan asas otonomi daerah dan tugas pembantuan.
           </p>
-          <a href="#">Lebih Lanjut</a>
+          <a href="#about">Lebih Lanjut</a>
         </div>
         <div class="home-img">
           <img src="asset/home-image.png" alt="dishub logo" />
@@ -51,44 +52,48 @@
 
       <section class="about" id="about">
         <h2>Profil Singkat</h2>
-        <div class="about-text">
-          <h3>Visi</h3>
-          <p>Terwujudnya Sistem Transportasi yang Handal dan Terintegrasi</p>
-          <h3>Misi</h3>
-          <p>Meningkatkan Kualitas Sistem Transportasi Aman, Tertib, dan Nyaman</p>
-          <h3>5 Citra Manusia Perhubungan</h3>
-          <ul>
-            <li>Taqwa terhadap Tuhan Yang Maha Esa</li>
-            <li>Tanggap terhadap kebutuhan masyarakat akan pelayanan jasa yang tertib, teratur, tepat waktu, bersih dan nyaman</li>
-            <li>Tangguh menghadapi tantangan</li>
-            <li>Terampil dan berperilaku gesit, jujur, ramah, sopan serta lugas</li>
-            <li>Tanggung jawab terhadap keselamatan dan keamanan jasa perhubungan</li>
-          </ul>
-        </div>
-        <div class="about-leader">
-          <h3>Pimpinan</h3>
-          <div class="img-leader">
-            <img src="asset/Heru-Mulyono-244x300.jpeg" alt="heru mulyono" />
+        <div class="about-container">
+          <div class="about-text">
+            <h3>Visi</h3>
+            <p>Terwujudnya Sistem Transportasi yang Handal dan Terintegrasi</p>
+            <h3>Misi</h3>
+            <p>Meningkatkan Kualitas Sistem Transportasi Aman, Tertib, dan Nyaman</p>
+            <h3>5 Citra Manusia Perhubungan</h3>
+            <ul>
+              <li>Taqwa terhadap Tuhan Yang Maha Esa</li>
+              <li>Tanggap terhadap kebutuhan masyarakat akan pelayanan jasa yang tertib, teratur, tepat waktu, bersih dan nyaman</li>
+              <li>Tangguh menghadapi tantangan</li>
+              <li>Terampil dan berperilaku gesit, jujur, ramah, sopan serta lugas</li>
+              <li>Tanggung jawab terhadap keselamatan dan keamanan jasa perhubungan</li>
+            </ul>
           </div>
-          <div class="text-info">
-            <div class="biodata">
-              <h4>Kepala Dinas</h4>
-              <ul>
-                <li>Nama : Heru Mulyono, SIP, MT</li>
-                <li>NIP : 19720420 199201 1 001</li>
-                <li>TTL : Malang, 20 April 1972</li>
-              </ul>
-            </div>
-            <div class="biodata">
-              <h4>Pendidikan : S2</h4>
-              <p>Riwayat Jabatan :</p>
-              <ul>
-                <li>Kasi Kecamatan Blimbing Kota Malang</li>
-                <li>Kasubbid BKBPM Kota Malang</li>
-                <li>Kabid BPBD Kota Malang</li>
-                <li>Sekretaris Bakesbangpol Kota Malang</li>
-                <li>Camat Klojen Kota Malang</li>
-              </ul>
+          <div class="about-leader">
+            <h3>Pimpinan</h3>
+            <div class="leader-container">
+              <div class="img-leader">
+                <img src="asset/Heru-Mulyono-244x300.jpeg" alt="heru mulyono" />
+              </div>
+              <div class="text-info">
+                <div class="biodata">
+                  <h4>Kepala Dinas</h4>
+                  <ul>
+                    <li>Nama : Heru Mulyono, SIP, MT</li>
+                    <li>NIP : 19720420 199201 1 001</li>
+                    <li>TTL : Malang, 20 April 1972</li>
+                  </ul>
+                </div>
+                <div class="biodata">
+                  <h4>Pendidikan : S2</h4>
+                  <p>Riwayat Jabatan :</p>
+                  <ul>
+                    <li>Kasi Kecamatan Blimbing Kota Malang</li>
+                    <li>Kasubbid BKBPM Kota Malang</li>
+                    <li>Kabid BPBD Kota Malang</li>
+                    <li>Sekretaris Bakesbangpol Kota Malang</li>
+                    <li>Camat Klojen Kota Malang</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -96,102 +101,93 @@
 
       <section class="layanan" id="layanan">
         <h2>Layanan Publik</h2>
-        <div class="layanan-left">
-          <div class="moto">
-            <h3>Moto Pelayanan</h3>
-            <p>Alur dan Standar Pelayanan Pengaduan Dinas Perhubungan Kota Malang</p>
-            <a href="https://dishub.malangkota.go.id/layanan-publik/motto-pelayanan/" target="_blank">Lanjut</a>
-          </div>
-          <div class="accordion">
-            <h3>Standar Pelayanan Publik</h3>
-            <div class="accordion-item">
-              <div class="accordion-item-header">
-                <a href="https://dishub.malangkota.go.id/layanan-publik/pelayanan-bidang-angkutan/" target="_blank">Pelayanan Bidang Angkutan</a>
-              </div>
-              <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                  <a href="https://dishub.malangkota.go.id/layanan-publik/pelayanan-bidang-angkutan/perubahan-atas-peraturan-walikota-malang-nomor-24-tahun-2013-tentang-tarip-angkutan/" target="_blank"
-                    >Perubahan Atas Peraturan Walikota Malang Nomor 24 Tahun 2013 Tentang Tarip Angkutan</a
-                  >
-                </div>
-                <div class="accordion-item-body-content">
-                  <a href="https://dishub.malangkota.go.id/layanan-publik/persyaratan-administrasi-kepengurusan-rekomendasi-kendaraan-truck/" target="_blank">Persyaratan Administrasi Kepengurusan Rekomendasi Kendaraan Truck</a>
-                </div>
-                <div class="accordion-item-body-content">
-                  <a href="https://dishub.malangkota.go.id/mekanisme-prosedur-pelaksanaan-pelayanan-surat-rekomendasi-izin-perpindahan-trayek-angkutan-dalam-trayek-2/" target="_blank"
-                    >Mekanisme Prosedur Pelaksanaan Pelayanan Surat Rekomendasi Izin Trayek Angkutan</a
-                  >
-                </div>
-                <div class="accordion-item-body-content">
-                  <a href="https://dishub.malangkota.go.id/mekanisme-prosedur-pelaksanaan-pelayanan-surat-rekomendasi-plat-kuning-2/" target="_blank">Mekanisme Prosedur Pelaksanaan Pelayanan Surat Rekomendasi Plat Kuning</a>
-                </div>
-              </div>
+        <div class="layanan-container">
+          <div class="layanan-left">
+            <div class="moto">
+              <h3>Moto Pelayanan</h3>
+              <p>Alur dan Standar Pelayanan Pengaduan Dinas Perhubungan Kota Malang</p>
+              <a href="https://dishub.malangkota.go.id/layanan-publik/motto-pelayanan/" target="_blank">Lanjut</a>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-item-header">
-                <a href="https://dishub.malangkota.go.id/layanan-publik/pelayanan-bidang-lalu-lintas/" target="_blank">Pelayanan Bidang Lalu Lintas</a>
+            <div class="accordion">
+              <h3>Standar Pelayanan Publik</h3>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  <a href="https://dishub.malangkota.go.id/layanan-publik/pelayanan-bidang-angkutan/" target="_blank">Pelayanan Bidang Angkutan</a>
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <a href="https://dishub.malangkota.go.id/layanan-publik/pelayanan-bidang-angkutan/perubahan-atas-peraturan-walikota-malang-nomor-24-tahun-2013-tentang-tarip-angkutan/" target="_blank"
+                      >Perubahan Atas Peraturan Walikota Malang Nomor 24 Tahun 2013 Tentang Tarip Angkutan</a
+                    >
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <a href="https://dishub.malangkota.go.id/layanan-publik/persyaratan-administrasi-kepengurusan-rekomendasi-kendaraan-truck/" target="_blank">Persyaratan Administrasi Kepengurusan Rekomendasi Kendaraan Truck</a>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <a href="https://dishub.malangkota.go.id/mekanisme-prosedur-pelaksanaan-pelayanan-surat-rekomendasi-izin-perpindahan-trayek-angkutan-dalam-trayek-2/" target="_blank"
+                      >Mekanisme Prosedur Pelaksanaan Pelayanan Surat Rekomendasi Izin Trayek Angkutan</a
+                    >
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <a href="https://dishub.malangkota.go.id/mekanisme-prosedur-pelaksanaan-pelayanan-surat-rekomendasi-plat-kuning-2/" target="_blank">Mekanisme Prosedur Pelaksanaan Pelayanan Surat Rekomendasi Plat Kuning</a>
+                  </div>
+                </div>
               </div>
-              <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
+              <div class="accordion-item">
+                <div class="accordion-item-header">
                   <a href="https://dishub.malangkota.go.id/layanan-publik/pelayanan-bidang-lalu-lintas/" target="_blank">Pelayanan Bidang Lalu Lintas</a>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <div class="accordion-item-header">
-                <a href="https://dishub.malangkota.go.id/layanan-publik/prosedur-penyelenggaraan-perparkiran-dinas-perhubungan-kota-malang/" target="_blank">Prosedur Penyelenggaran Perparkiran Dinas Perhubungan Kota Malang</a>
-              </div>
-              <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                  <a href="https://dishub.malangkota.go.id/layanan-publik/prosedur-penyelenggaraan-perparkiran-dinas-perhubungan-kota-malang/" target="_blank">Prosedur Penyelenggaran Perparkiran Dinas Perhubungan Kota Malang</a>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <a href="https://dishub.malangkota.go.id/layanan-publik/pelayanan-bidang-lalu-lintas/" target="_blank">Pelayanan Bidang Lalu Lintas</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <div class="accordion-item-header">
-                <a href="https://dishub.malangkota.go.id/mekanisme-pelayanan-pengujian-kendaraan-bermotor/" target="_blank">Mekanisme Pelayanan Pengujian Kendaraan Bermotor</a>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  <a href="https://dishub.malangkota.go.id/layanan-publik/prosedur-penyelenggaraan-perparkiran-dinas-perhubungan-kota-malang/" target="_blank">Prosedur Penyelenggaran Perparkiran Dinas Perhubungan Kota Malang</a>
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <a href="https://dishub.malangkota.go.id/layanan-publik/prosedur-penyelenggaraan-perparkiran-dinas-perhubungan-kota-malang/" target="_blank">Prosedur Penyelenggaran Perparkiran Dinas Perhubungan Kota Malang</a>
+                  </div>
+                </div>
               </div>
-              <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
+              <div class="accordion-item">
+                <div class="accordion-item-header">
                   <a href="https://dishub.malangkota.go.id/mekanisme-pelayanan-pengujian-kendaraan-bermotor/" target="_blank">Mekanisme Pelayanan Pengujian Kendaraan Bermotor</a>
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <a href="https://dishub.malangkota.go.id/mekanisme-pelayanan-pengujian-kendaraan-bermotor/" target="_blank">Mekanisme Pelayanan Pengujian Kendaraan Bermotor</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="layanan-right">
-          <h3>Transportasi</h3>
-          <div class="transportasi-rute">
-            <div class="rute-jadwal">
-              <a href="https://dishub.malangkota.go.id/transportasi/rute-bus-sekolah-kota-malang/"><h4>Rute Bus Sekolah Kota Malang</h4></a>
-              <a href="https://dishub.malangkota.go.id/transportasi/jalur-angkutan-kota-malang-2/"><h4>Jadwal Angkutan Kota Malang</h4></a>
-              <a href="https://dishub.malangkota.go.id/transportasi/jadwal-kereta-api/"><h4>Jadwak Kereta Api</h4></a>
-              <a href="https://dishub.malangkota.go.id/transportasi/jadwal-keberangkatan-bus-dari-malang/"><h4>Jadwal Keberangkatan Bus</h4></a>
-            </div>
-            <div class="rute-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.6692628338196!2d112.64790251466455!3d-7.929569881155745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6298e03e57f63%3A0x587f9fd3fb0e13bb!2sPemerintah%20Kota%20Malang%20Dinas%20Perhubungan!5e0!3m2!1sen!2sid!4v1662692823469!5m2!1sen!2sid"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <div class="rute-book">
-              <h3>Book dan Artikel</h3>
-              <div class="book">
-                <h5>BUKU PETUNJUK TATA CARA BERLALULINTAS (HIGHWAY CODE ) DI INDONESIA</h5>
-                <a href="https://dishub.malangkota.go.id/wp-content/uploads/sites/16/2016/05/BUKU-PETUNJUK-TATA-CARA-BERLALU-LINTAS-highwaycode-Di-Indonesia.pdf" target="_blank">Baca/Download</a>
+          <div class="layanan-right">
+            <h3>Transportasi</h3>
+            <div class="transportasi-rute">
+              <div class="rute-jadwal">
+                <a href="https://dishub.malangkota.go.id/transportasi/rute-bus-sekolah-kota-malang/" target="_blank">Rute Bus Sekolah Kota Malang</a>
+                <a href="https://dishub.malangkota.go.id/transportasi/jalur-angkutan-kota-malang-2/" target="_blank">Jadwal Angkutan Kota Malang</a>
+                <a href="https://dishub.malangkota.go.id/transportasi/jadwal-kereta-api/" target="_blank">Jadwal Kereta Api</a>
+                <a href="https://dishub.malangkota.go.id/transportasi/jadwal-keberangkatan-bus-dari-malang/" target="_blank">Jadwal Keberangkatan Bus</a>
               </div>
-              <div class="book">
-                <h5>BUKU PETUNJUK TATA CARA BERSEPEDA MOTOR DI INDONESIA</h5>
-                <a href="https://dishub.malangkota.go.id/wp-content/uploads/sites/16/2016/05/BUKU-PETUNJUK-TATA-CARA-BERSEPEDA-MOTOR-DI-INDONESIA.pdf" target="_blank">Baca/Download</a>
-              </div>
-              <div class="book">
-                <h5>CETAK BIRU KESELAMATAN LALU LINTAS DAN ANGKUTAN JALAN</h5>
-                <a href="https://dishub.malangkota.go.id/wp-content/uploads/sites/16/2016/05/blueprint-KESELAMATAN-LALU-LINTAS-DAN-ANGKUTAN-JALAN.pdf" target="_blank">Baca/Download</a>
+              <div class="rute-book">
+                <h3>Book dan Artikel</h3>
+                <div class="book">
+                  <h5>BUKU PETUNJUK TATA CARA BERLALULINTAS (HIGHWAY CODE ) DI INDONESIA</h5>
+                  <a href="https://dishub.malangkota.go.id/wp-content/uploads/sites/16/2016/05/BUKU-PETUNJUK-TATA-CARA-BERLALU-LINTAS-highwaycode-Di-Indonesia.pdf" target="_blank">Baca/Download</a>
+                </div>
+                <div class="book">
+                  <h5>BUKU PETUNJUK TATA CARA BERSEPEDA MOTOR DI INDONESIA</h5>
+                  <a href="https://dishub.malangkota.go.id/wp-content/uploads/sites/16/2016/05/BUKU-PETUNJUK-TATA-CARA-BERSEPEDA-MOTOR-DI-INDONESIA.pdf" target="_blank">Baca/Download</a>
+                </div>
+                <div class="book">
+                  <h5>CETAK BIRU KESELAMATAN LALU LINTAS DAN ANGKUTAN JALAN</h5>
+                  <a href="https://dishub.malangkota.go.id/wp-content/uploads/sites/16/2016/05/blueprint-KESELAMATAN-LALU-LINTAS-DAN-ANGKUTAN-JALAN.pdf" target="_blank">Baca/Download</a>
+                </div>
               </div>
             </div>
           </div>
@@ -246,8 +242,73 @@
           </div>
         </div>
       </section>
-    </div>
 
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+          <div class="contact-social">
+            <div class="social-link">
+              <a href="https://www.facebook.com/dishubkotamalang/" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <div class="social-text">
+                <h5>Facebook</h5>
+                <p>@Dinas Perhubungan Kota Malang</p>
+              </div>
+            </div>
+            <div class="social-link">
+              <a href="https://dishub.malangkota.go.id/wp-content/uploads/sites/16/2016/05/Nomor-Telepon-Penting-Kota-Malang.pdf" target="_blank"><i class="bx bxs-phone"></i></a>
+              <div class="social-text">
+                <h5>Phone</h5>
+                <p>Nomor Telephone</p>
+              </div>
+            </div>
+            <div class="social-link">
+              <a href="https://www.instagram.com/dishub_malangkota/" target="_blank"><i class="bx bxl-instagram"></i></a>
+              <div class="social-text">
+                <h5>Instagram</h5>
+                <p>@dishub_malangkota</p>
+              </div>
+            </div>
+            <div class="social-link">
+              <a href="https://twitter.com/dishub_mlgkota" target="_blank"><i class="bx bxl-twitter"></i></a>
+              <div class="social-text">
+                <h5>Twitter</h5>
+                <p>@dishub_mlgkota</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-suggest">
+            <form action="#">
+              <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Name" />
+              </div>
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email" />
+              </div>
+              <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter Phone" />
+              </div>
+              <div class="input-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+              </div>
+              <button id="sendBtn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2022 DINAS PERHUBUNGAN KOTA MALANG.</p>
+    </footer>
+    <!-- End Footer -->
     <script src="javascript/script.js"></script>
+    <!-- Email js -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>

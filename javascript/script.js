@@ -1,11 +1,22 @@
 // Menu mobile
-const hamburger = document.querySelector('.hamburger');
-const navbar = document.getElementById('menu');
+const mobileBtn = document.getElementById('mobile-cta');
+const navMenu = document.querySelector('nav');
+const mobileBtnExit = document.getElementById('mobile-exit');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navbar.classList.toggle('active');
+mobileBtn.addEventListener('click', () => {
+  navMenu.classList.add('menu-btn');
 });
+
+mobileBtnExit.addEventListener('click', () => {
+  navMenu.classList.remove('menu-btn');
+});
+
+document.querySelectorAll('.nav-link').forEach((n) =>
+  n.addEventListener('click', () => {
+    navMenu.classList.remove('menu-btn');
+    mobileBtnExit.classList.remove('menu-btn');
+  })
+);
 
 // Faqs
 const accor = document.querySelectorAll('.accordion-item-header');
@@ -27,3 +38,40 @@ accor.forEach((accorItems) => {
     }
   });
 });
+
+// Email
+function validate() {
+  let name = document.getElementById('name');
+  let email = document.getElementById('email');
+  let phone = document.getElementById('phone');
+  let message = document.getElementById('message');
+  let sendBtn = document.getElementById('sendBtn');
+
+  sendBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (name.value == '' || email.value == '' || phone.value == '' || message.value == '') {
+      emptyerror();
+    } else {
+      // sendmail(name.value, email.value, phone.value, message.value);
+      success();
+    }
+  });
+}
+
+validate();
+
+function emptyerror() {
+  swal({
+    title: 'Oh no....',
+    text: 'Pesan Harus Diisi',
+    icon: 'error',
+  });
+}
+
+function success() {
+  swal({
+    title: 'Good job!',
+    text: 'Terima Kasih',
+    icon: 'success',
+  });
+}
